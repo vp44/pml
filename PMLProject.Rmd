@@ -1,9 +1,11 @@
 ---
-title: 'Practical Machine Learning Prediction Project'
+title: "Practical Machine Learning Prediction Project"
 author: "Removed For Privacy [GitHub](https://github.com/vp44/pml)"
 output:
   html_document:
     keep_md: yes
+    toc: yes
+  pdf_document:
     toc: yes
 ---
 
@@ -126,8 +128,7 @@ predictionsB1 <- predict(modFitB1, myTesting, type = "class")
 confusionMatrix(predictionsB1, myTesting$classe)
 ```
 
-We obtain much better accuracy and pick this model.
-
+We obtain much better accuracy and pick this model. The estimated out of sample error is <0.3%
 
 #Generate the files for submission.
 
